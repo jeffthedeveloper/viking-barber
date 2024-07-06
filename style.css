@@ -1,0 +1,914 @@
+/* Importando as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=IM+Fell+English+SC&family=Parchment&family=Marcellus+SC&family=Cloister+Black&display=swap');
+
+/* aplicando fontes */
+
+/* Título principal */
+h1 {
+  font-family: 'Uncial Antiqua', cursive; 
+  font-size: 4rem; 
+  color: #5D3A22; 
+}
+
+/* Corpo do site */
+body {
+  font-family: 'Parchment', cursive; 
+  font-size: 16px;
+  color: #000000; 
+}
+
+/* Calendário */
+#calendario {
+  font-family: 'IM Fell English SC', serif; 
+}
+
+/* Quem Somos */
+#quem-somos h2, #quem-somos h3, #quem-somos p {
+  font-family: 'Marcellus SC', serif; 
+}
+
+/* Formulário de Contato */
+#contato h2,
+#contato label,
+#contato input,
+#contato textarea,
+#contato button {
+  font-family: 'Cloister Black', serif; 
+}
+
+/* ... (outras regras CSS) ... */
+
+
+
+
+/* Scroll Indicator - para o usuario posicionar no site de acordo com interação de click */
+
+
+
+.scroll-indicator {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 2; /* Garante que fique acima de outros elementos */
+}
+
+
+h2 {
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.dot:hover{
+	background-color: #d4af37;
+	
+}
+
+.dot.active {
+    background-color: #d4af37;
+}
+
+/* Logo */
+.logo {
+  margin-right: 2rem; /* Espaçamento entre a logo e o texto */
+  
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente branco */
+}
+
+.logo img {
+  width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+  height: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+  border-radius: 50%;  /* Bordas arredondadas */
+  padding: 1rem;      /* Adiciona padding para um visual mais leve */
+  margin-top: 1.5rem;
+}
+
+/* Nome e Subtítulo (VIKING Barber) */
+#VIKING-barber {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#VIKING-barber h1 {
+  font-size: 4rem;
+  color: #804A00;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 5;
+  padding: 5;
+}
+
+#barber {
+  font-size: 3rem;
+  color: #D4AF37;
+  padding: 0;
+  margin: 0;
+}
+
+/* Botão de Chamada para Ação (CTA) */
+
+.cta-button {
+  display: inline-block;
+  
+   background: url('assets/img/fundo-amadeirado.jpg'), /* Imagem de fundo */
+              linear-gradient(to bottom, #402815, #5d3a22); /* Gradiente de cores */ 
+  color: #f5f5f5;
+  padding: 10px; /* ajusta o padding vertical e horizontal */
+  text-decoration: none;
+  border: 2px solid #d4af37;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  
+}
+
+
+.cta-button:hover {
+  
+  background: linear-gradient(to bottom, #402815, #5d3a22), /* Gradiente de cores */ 
+  url('assets/img/fundo-amadeirado.jpg'); /* Imagem de fundo */
+  color: #b87333; /* Cobre */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.cta-button .arrow {
+    display: inline-block;
+    margin-left: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(-135deg); /* Seta para baixo */
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow {
+    transform: rotate(45deg); /* Seta para cima ao passar o mouse */
+}
+
+
+
+/* Cabeçalho */
+
+
+
+
+
+header {
+  background-image: url('assets/img/fundo-amadeirado.jpg'); /* Textura de madeira */
+  background-size: cover;
+  background-repeat: repeat;
+  color: #f5f5f5; /* Off-white para contraste */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Cinzel Decorative', cursive; /* Fonte com estilo medieval */
+  display: flex;           /* Ativa o Flexbox */
+  align-items: center;    /* Alinha verticalmente ao centro */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 2rem;           /* Aumenta o espaçamento interno */
+
+}
+
+
+
+/* Listras em espiral (opcional) */
+header::before {
+    /* ... (mesmo estilo anterior) ... */
+}
+
+/* Logo e Texto */
+
+
+header #synapse p {
+    font-weight: bold;
+    font-family: "Times New Roman", serif; /* Fonte elegante */
+    font-size: 2rem;
+    color: #d4af37; /* Cor dourada */
+    margin: 0;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #b87333; /* Cobre */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra mais forte */
+}
+
+header #barber {
+  font-size: 2.5rem;
+  color: #d4af37; /* Dourado envelhecido */
+}
+
+/* Navegação */
+nav {
+  background: url('assets/img/fundo-amadeirado.jpg'), /* Imagem de fundo */
+              linear-gradient(to bottom, #402815, #5d3a22); /* Gradiente de cores */
+  padding: 1rem 0;
+  border-top: 2px solid #d4af37; /* Borda superior dourada */
+  border-bottom: 2px solid #d4af37; /* Borda inferior dourada */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background: linear-gradient(to bottom, #402815, #5d3a22), /* Gradiente de cores */ 
+  url('assets/img/fundo-amadeirado.jpg'); /* Imagem de fundo */
+  color: #b87333; /* Cobre */
+  font-weight: bold;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Seções */
+
+/* -----------------------------------------------------------------------------------------------------------------
+
+
+
+
+ /* Seção Quem Somos */
+
+#quem-somos {
+  background-color: #221a13; /* Marrom escuro de fundo */
+  color: #f5f5f5; /* Off-white para o texto */
+  padding: 3rem 0;
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+  position: relative; /* Para o efeito de fade */
+  
+}
+
+#quem-somos h2 {
+  font-family: 'Marcellus SC', serif; 	
+  font-size: 2.5rem;
+  color: #d4af37; /* Dourado */
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.quem-somos-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Efeito de fade no scroll */
+#quem-somos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: contrast(1.2) brightness(0.9) sepia(0.3) drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Filtros */
+  background: linear-gradient(to bottom, #402815, #5d3a22); /* Gradiente de cores */
+  z-index: -1; /* Atrás do conteúdo */
+  opacity: var(--opacity); /* Usa a variável CSS */
+}
+
+
+ ... MISSÃO, VISÃO E VALORES... */
+
+
+.mvv-container body{
+	background-color: rgba(51, 37, 22, 0.8); /* Marrom semi-transparente */ 
+	
+}
+
+.mvv-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta para telas menores */
+  gap: 2rem;
+  max-width: 90%; /* Limita a largura do container */
+  margin: 0 auto; /* Centraliza o container */
+}
+
+.mvv-item {
+  border: none;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  background-color: rgba(51, 37, 22, 0.8); /* Marrom semi-transparente */ 
+}
+
+.mvv-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.mvv-item h3 {
+  font-size: 1.8rem;
+  color: #d4af37;
+  margin-bottom: 0.5rem;
+}
+
+.mvv-item p {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  
+}
+
+
+/* ---------------------------------------------- OPCIONAL  
+
+
+Gradiente de fundo para cada item (OPCIONAL) */
+.mvv-item.missao {
+  background: linear-gradient(to bottom, #5d3a22, #402815);
+}
+
+.mvv-item.visao {
+  background: linear-gradient(to bottom, #402815, #2d1c0f);
+}
+
+.mvv-item.valores {
+  background: linear-gradient(to bottom, #2d1c0f, #1a1007);
+}
+
+
+/* Efeito de fade no scroll */
+#quem-somos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Atrás do conteúdo */
+  opacity: var(--opacity); /* Usa a variável CSS */
+}
+
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------- 
+
+
+
+CODIGO SERVIÇOS ... */
+
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+	background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+	background-repeat: repeat; /* Impede a repetição da imagem */
+	color: #fff; /* Cor do texto (branco para contraste) */
+	filter: contrast(1.2) brightness(0.9) sepia(0.3) drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Filtros */
+	background: url('assets/img/fundo-amadeirado.jpg'), /* Imagem de fundo */
+              linear-gradient(to bottom, #402815, #5d3a22); /* Gradiente de cores */
+}
+
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.servico {
+    text-align: left;
+    padding: 30px;
+}
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Removido height: 100vh para se ajustar ao conteúdo */
+    padding: 3rem 0;  /* Aumenta o espaçamento interno */
+    background-color: #f0f0f0;
+}
+
+.servicos-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsivo */
+    gap: 2rem;
+}
+
+.servico-item {
+    border: 2px solid #d4af37; /* Borda dourada */
+    border-radius: 10px;
+    overflow: hidden; /* Para evitar que a imagem transborde */
+}
+
+.servico-imagem {
+    height: 200px; /* Altura da imagem de fundo */
+    background-size: cover; /* Cobre toda a área com a imagem */
+    background-position: center; /* Centraliza a imagem */
+    transition: transform 0.3s ease; /* Efeito de zoom ao passar o mouse */
+}
+
+.servico-imagem:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+}
+
+.servico-descricao {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.servico-descricao h3 {
+    color: #333; /* Texto escuro para contraste */
+    margin-bottom: 0.5rem;
+}
+
+.servico-descricao p {
+    color: #555;
+}
+
+#servicos h2 { /* Título "Serviços" */
+  font-size: 2.5rem;
+  color: #d4af37; /* Dourado */
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#servicos .servico-descricao h3 { /* Texto "Barba" */
+  font-family: 'Merriweather', serif;
+  font-weight: 400; /* Regular */
+  font-size: 1.5rem;
+  color: #FFFFFF; /* Branco */
+}
+
+#servicos .servico-descricao p { /* Corpo do texto "Barba" */
+  font-family: 'Merriweather', serif;
+  font-weight: 400; /* Regular */
+  font-size: 1.2rem;
+  color: #FFFFFF; /* Branco */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra sutil para destaque */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente preto */
+  padding: 1rem;
+  border-radius: 8px; /* Bordas arredondadas */
+  margin-top: 0.5rem;
+}
+
+
+/* --------------------------------------------------------------------------------------------
+
+Estilos gerais */
+#servicos {
+  background-color: #33251a; /* Marrom escuro de fundo */
+  color: #f5f5f5; /* Off-white para o texto */
+  padding: 3rem 0;
+  font-family: 'Uncial Antiqua', cursive; /* Fonte medieval */
+  text-align: center;
+}
+
+#servicos h2 {
+  font-size: 3rem;
+  color: #b87333; /* Cobre */
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+/* Estilos dos itens de serviço */
+.servicos-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.servico-item {
+  border: none;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); /* Moldura irregular */
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  background-color: #221a13; /* Marrom mais escuro para o fundo do item */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.servico-item:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra mais forte ao passar o mouse */
+}
+
+.servico-imagem {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  filter: sepia(0.5) contrast(1.2) brightness(0.9); /* Efeito pergaminho */
+}
+
+.servico-descricao {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.servico-descricao h3 {
+  font-size: 1.8rem;
+  color: #d4af37; /* Dourado envelhecido */
+  margin-bottom: 0.5rem;
+}
+
+.servico-descricao p {
+  font-size: 1.2rem;
+  color: #f5f5f5; /* Off-white */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+/* Decoração com runas (opcional) */
+.servico-descricao::before {
+  content: "룬"; /* Símbolo de runa */
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.pergaminho {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #f5f5f5;
+  border: 2px solid #b87333;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Ajuste na duração da transição */
+  z-index: 10;
+  max-width: 80%; /* Limita a largura máxima do pergaminho */
+  overflow-y: auto; /* Adiciona barra de rolagem vertical se o conteúdo for muito longo */
+}
+
+.fechar-pergaminho {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: #b87333; /* Cor de fundo para o botão */
+  color: white; /* Cor do texto do botão */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- 
+
+
+Seções Bem-Estar e Nosso Diferencial */
+#bem-estar,
+#diferencial {
+  background-color: #221a13;
+  color: #f5f5f5;
+  padding: 3rem 0;
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+#bem-estar h2,
+#diferencial h2 {
+  font-family: 'Marcellus SC', serif; 	
+  font-size: 2.5rem;
+  color: #d4af37; /* Dourado */
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#bem-estar p,
+#diferencial p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#diferencial .diferencial-imagem {
+    min-height: 300px; /* ou outro valor adequado */
+}
+
+
+/* Imagens */
+.section-image img { /* Classe única para imagens */
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #b87333;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  filter: sepia(0.3) contrast(1.1);
+}
+
+/* Layout Responsivo */
+@media (min-width: 768px) {
+  .bem-estar-conteudo { /* Seletor específico para Bem-Estar */
+    display: flex;
+    flex-direction: column; /* Texto abaixo da imagem em telas maiores */
+    gap: 2rem;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  #diferencial .diferencial-conteudo { /* Seletor específico para Diferencial */
+    display: flex;
+    flex-direction: column; /* Imagem e texto lado a lado no Diferencial */
+    gap: 2rem;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .section-image { /* Seletor para ambas as seções */
+    flex: 1;
+  }
+
+  .section-text { /* Seletor para ambas as seções */
+    flex: 2;
+  }
+
+  #bem-estar p,
+  #diferencial p {
+    text-align: justify;
+  }
+}
+
+/* Efeito de Pergaminho (Hover) em Textos */
+.section-text { /* Seletor para ambas as seções */
+  background-color: rgba(34, 26, 19, 0.8);
+  padding: 1.5rem;
+  border: 2px solid #5d3a22;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: auto;
+  max-width: 100%;
+}
+
+.section-text:hover {
+  background-color: rgba(34, 26, 19, 0.9);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*-------------------------------------------------------------------------- 
+
+Estilo do calendário */
+
+
+.calendario {
+	
+  display: flex;
+  /* Estilos aplicados diretamente ao conteúdo do calendário */
+  height: 0;
+  flex: 2;  /* Texto e calendário ocupam 2/3 do espaço */
+  flex-direction: column; /* Texto e calendário em coluna */
+  gap: 2rem;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  width: 100%; 
+  max-width: 400px; 
+  margin: 0 auto; 
+}
+
+
+#calendar {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+#calendar.minimized {
+  height: 0;
+}
+
+#calendar.expanded {
+  padding-top: 30px;
+  height: 850px; /* Altura desejada ao expandir */
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Corrigido para text-align */
+}
+
+/* Container do calendário */
+#calendar-container {
+  position: relative;
+  margin-bottom: 20px; /* Adiciona uma margem inferior para separar do formulário de contato */
+}
+
+/* Estilo da tabela de agendamento */
+#calendario {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Adiciona uma margem inferior para separar do conteúdo abaixo */
+  background-color: #333; /* Cinza escuro */
+  color: white; /* Texto branco */
+}
+
+/* Botão para expandir/recolher */
+#expand-calendar-btn {
+  border: none;
+  padding: 10px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: -50px; /* Ajusta a posição acima do calendário */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%);
+  z-index: 10; /* Garante que o botão esteja acima de outros conteúdos se necessário */
+  background-color: #d4af37;
+  color: #222;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#expand-calendar-btn:hover {
+  background-color: #e6b800; /* Dourado mais escuro no hover */
+}
+
+/* ... (Outros estilos permanecem inalterados) ... */
+
+
+/* ---------------------------------------------------------------------------
+
+ Estilo da tabela de agendamento */
+
+#calendario {
+	
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #333; /* Cinza escuro */
+    color: white; /* Texto branco */
+    z-index: 1; /* Garante que a tabela esteja abaixo de outros conteúdos se necessário */
+	
+}
+
+#calendario th {
+    background-color: #222; /* Cinza mais escuro */
+    color: #ffcc00; /* Dourado */
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #ffcc00; /* Borda dourada */
+}
+
+#calendario td {
+    border: 2px solid #ffcc00; /* Borda dourada */
+    padding: 10px;
+    text-align: center;
+    background-color: #555; /* Cinza médio */
+}
+
+#calendario tbody td:first-child {
+    font-weight: bold;
+    background-color: #222; /* Cinza mais escuro */
+}
+
+#calendario tbody td:not(:first-child) {
+    background-color: #777; /* Cinza mais claro */
+}
+
+#calendario tbody td:hover {
+    background-color: #ffcc00; /* Azul claro no hover */
+    color: #222; /* Texto escuro no hover */
+}
+
+
+/* ... (Estilo do calendário de agendamento) ... */
+/* Estilo para a coluna de horários */
+.horario {
+    width: 100px; /* Ajuste conforme necessário */
+}
+
+/* Estilo para as células de horário */
+.slot {
+    cursor: pointer;
+}
+/* Estilo para células reservadas */
+.slot.reserved {
+    background-color: #ffb3b3; /* Vermelho claro para reservado */
+    color: #cc0000; /* Vermelho escuro para texto */
+}
+
+
+/* -----------------------------------------------------------------------------------------------------------------
+
+
+
+Formulário de Contato */
+
+
+
+#contato {
+   filter: contrast(1.2) brightness(0.9) sepia(0.3) drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Filtros */
+   background: linear-gradient(to bottom, #402815, #5d3a22); /* Gradiente de cores */
+   color: #fff;          /* Texto branco para contraste */
+   padding: 3rem;       
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Marcellus SC', serif; 
+}
+
+#contato h2 {
+
+  font-family: 'Marcellus SC', serif; 	
+  font-size: 2.5rem;
+  color: #d4af37;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+}
+
+#contato form {
+    max-width: 500px;   
+    margin: 0 auto;     
+}
+
+/* Estilos dos campos do formulário */
+
+#contato label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left; /* Alinha os labels à esquerda */
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+	font-family: 'Marcellus SC', serif; 
+}
+
+/* Estilo do botão de enviar */
+#contato button[type="submit"] {
+    background-color: #d4af37;
+    color: #222;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+	font-size:20px;
+    transition: background-color 0.3s ease;
+	font-family: 'Marcellus SC', serif; 
+}
+
+#contato button[type="submit"]:hover {
+    background-color: #a88529; 
+}
+/* Rodapé */
+footer {
+	margin-top: 10px;
+    background-color: #333; /* Cor de fundo mais escura */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: auto;  /* Remove a propriedade width */
+}
